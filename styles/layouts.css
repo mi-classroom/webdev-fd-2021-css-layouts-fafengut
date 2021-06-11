@@ -22,11 +22,15 @@
 .card{
   position: sticky;
   top: 0;
-  width: 50%;
+  width: clamp(300px, 50%, 800px);
   background-color: var(--lightest);
   border-radius: var(--radius-m);
   overflow: hidden;
   box-shadow: var(--n-shadow-l);
+}
+
+.card .card-headline {
+  font-size: clamp(var(--l), 5vw, var(--xxxl));
 }
 
 .card figcaption{
