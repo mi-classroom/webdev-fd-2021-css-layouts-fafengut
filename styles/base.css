@@ -34,6 +34,8 @@ h1{
 }
 
 h2{
+  position: absolute;
+  top: 0;
   padding-top: var(--m);
   font-size: var(--xxl);
   color: var(--color-accent);
