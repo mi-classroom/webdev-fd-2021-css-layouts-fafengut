@@ -53,3 +53,17 @@
   padding: var(--l) var(--m) var(--xl) var(--m);
 }
 
+.card .portrait{
+  display: none;
+}
+
+@media only screen and (min-width: 1400px){
+  .card .portrait{
+    display: block;
+  }
+
+  .card .landscape{
+    display: none;
+  }
+}
+
