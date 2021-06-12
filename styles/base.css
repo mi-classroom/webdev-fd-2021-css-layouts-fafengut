@@ -52,6 +52,12 @@ img{
   width: 100%;
 }
 
-
+@media only screen and (min-width: 1400px){
+  img{
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    align-self: center;
+  }
+}
 
 
