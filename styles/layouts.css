@@ -19,7 +19,7 @@
 /* Card
 ###########################################################################  */
 
-.card{
+.card{ /*Portrait*/
   position: sticky;
   top: 0;
   width: clamp(300px, 50%, 800px);
@@ -29,10 +29,27 @@
   box-shadow: var(--n-shadow-l);
 }
 
+@media only screen and (min-width: 1400px){
+  .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .card .card-headline {
   font-size: clamp(var(--l), 5vw, var(--xxxl));
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (min-width: 1400px){ 
+  .card .card-headline{
+    position: static;
+    grid-column: 1;
+  }
 }
 
 .card figcaption{
   padding: var(--l) var(--m) var(--xl) var(--m);
 }
+
